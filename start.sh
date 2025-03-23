@@ -6,8 +6,11 @@ BOLD_YELLOW='\033[1;33m'
 
 DOMAIN_IP_ADDRESS="$(ip route get 8.8.8.8 | awk -F"src " 'NR==1{split($2,a," ");print a[1]}')"
 
-# Запускаем контейнеры
+# Выключаем текущие контейнеры
 cd docker
+docker compose down
+
+# Запускаем контейнеры
 docker compose up -d --build
 
 ## Адреса веб-интерфейсов
