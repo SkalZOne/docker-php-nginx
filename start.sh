@@ -10,6 +10,14 @@ DOMAIN_IP_ADDRESS="$(ip route get 8.8.8.8 | awk -F"src " 'NR==1{split($2,a," ");
 cd docker
 docker compose down
 
+# Качаем composer
+sudo apt install composer
+cd ..
+cd src
+composer install --ignore-platform-req=ext-simplexml
+cd ..
+cd docker
+
 # Запускаем контейнеры
 docker compose up -d --build
 
