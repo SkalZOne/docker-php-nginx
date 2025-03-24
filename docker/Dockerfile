@@ -14,9 +14,7 @@ RUN apt-get update \
     && docker-php-ext-install -j24 intl \
     && docker-php-ext-install -j24 zip \
     && docker-php-ext-install -j24 mysqli \
-    && docker-php-ext-install -j24 pdo_mysql \
-    && pecl install redis\
-    && docker-php-ext-enable redis
+    && docker-php-ext-install -j24 pdo_mysql
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
