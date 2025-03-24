@@ -14,7 +14,7 @@ docker compose down
 sudo apt install composer
 cd ..
 cd src
-composer install --ignore-platform-req=ext-simplexml
+composer install --ignore-platform-req=ext-simplexml --no-interaction
 cd ..
 cd docker
 
