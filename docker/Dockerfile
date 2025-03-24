@@ -11,7 +11,6 @@ RUN apt-get update \
     && apt-get install -y libicu-dev \
     && docker-php-ext-configure intl \
     && docker-php-ext-install intl \
-    && docker-php-ext-install -j24 intl \
     && docker-php-ext-install -j24 zip \
     && docker-php-ext-install -j24 mysqli \
     && docker-php-ext-install -j24 pdo_mysql
