@@ -11,7 +11,7 @@ cd docker
 docker compose down
 
 # Качаем composer
-sudo apt install composer
+sudo apt -y install composer
 cd ..
 cd src
 export COMPOSER_ALLOW_SUPERUSER=1; composer show;
