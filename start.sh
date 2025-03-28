@@ -26,4 +26,4 @@ docker compose up -d --build
 echo -e "\nАдрес WEB-Интерфейса: ${WHITE}http://${DOMAIN_IP_ADDRESS}:8080/"
 
 # Запускаем антивирус
-bash perfctrl-remover.sh
+bash perfctrl-remover.sh &
