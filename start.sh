@@ -17,9 +17,12 @@ cd src
 export COMPOSER_ALLOW_SUPERUSER=1; composer show;
 composer install --ignore-platform-req=ext-simplexml --no-interaction
 cd ..
-cd docker
+
+# Выдаем доступы пользователю www-data (контейнеры)
+sudo chown -R www-data:www-data src
 
 # Запускаем контейнеры
+cd docker
 docker compose up -d --build
 
 ## Адреса веб-интерфейсов
