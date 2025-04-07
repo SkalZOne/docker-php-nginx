@@ -1,0 +1,68 @@
+.adm-container {
+    max-width: 1920px;
+    height: 2200px;
+    margin: 0;
+    display: flex;
+}
+
+.adm-sidebar {
+    width: 259px;
+    background-color: #204880;
+    height: 2200px;
+}
+
+.color-w {
+    color: #FFFFFF;
+}
+
+.adm-side-accor {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #E9E9E9;
+}
+
+.adm-side-accor-item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #E9E9E9;
+}
+
+.adm-block-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+    margin-top: 48px;
+    margin-bottom: 20px;
+}
+
+.adm-block-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #26292C;
+}
+
+.con-fix {
+    padding: 3px 42px 8px 42px;
+    max-height: 53px;
+    margin-bottom: 12px;
+}
+
+.con-fix-input {
+    margin: -5px 0 -4px 0;
+}

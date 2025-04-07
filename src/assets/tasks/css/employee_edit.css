@@ -1,0 +1,21 @@
+.emp_item_text{
+	padding: 0px;
+	align-content: center;
+	height: 34px;
+	width: 100%;
+    color: #7A7A7A;
+    font-weight: 400;
+    font-size: 14px;
+    outline: #C6CDD3 auto 1px;
+    border-radius: 5px;
+	padding-left: 5px;
+	background: transparent;
+}
+.emp_item_text:focus-visible{
+    outline: #15B9FF auto 1px;
+	background: white;
+}
+.emp_card{
+	background-color: transparent;
+    border: #E9E9E9 solid 1px;
+}

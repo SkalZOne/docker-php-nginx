@@ -1,15 +1,15 @@
-<?php
-
-$client = new \Predis\Client(
-    [
-        ["host" => "83.222.27.169", "port" => 6379],
-        ["host" => "217.114.10.239", "port" => 6379]
-    ],
-    ['cluster' => 'redis']
-);
-
-$client->set('foo', 'bar');
-
-$value = $client->get('foo');
-
-var_dump($value);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="auth.php" method="POST">
+        <input name="email_phone" type="text" placeholder="Почта или телефон">
+        <input name="password" type="password" placeholder="Пароль">
+        <button type="submit">Авторизироваться</button>
+    </form>
+</body>
+</html>

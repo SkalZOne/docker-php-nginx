@@ -1,0 +1,88 @@
+.head_name{
+	color: #535c69;
+}
+.task_descr{
+	margin: 0px 25px;
+	padding: 20px 0px;
+	border-top: 1px solid var(--table);
+	min-height: 150px;
+}
+.foot_btns{
+	border-top: 1px solid var(--table);
+	padding: 15px 0px;
+}
+.title_row{
+	display: flex;
+	align-items: center;
+	margin: 0px 25px;
+}
+.comms_title{
+	font-weight: 600;
+	color: #5c6470;
+	margin-left: 25px;
+}
+.comms_count{
+	font-family: system-ui;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	width: 20px;
+	border-radius: 10px;
+	color: white;
+	margin-left: 10px;
+}
+.comms_blue{
+	background-color: #3BC8F5;
+}
+.comms_gray{
+	background-color: #A9A9A9;
+}
+.view_left{
+}
+.view_right{
+	width: fit-content;
+	margin-left: 20px;
+}
+.row{
+	display: flex;
+}
+.card{
+	height: fit-content;
+	min-width: 300px;
+	border: 0;
+	background-color: #F6F8F9;
+}
+.card_header{
+	font-weight: 600;
+	padding: 5px 15px;
+	color: white;
+	background-color: #67DAE8;
+	margin-bottom: 10px;
+}
+.card_row{
+	border-bottom: 1px solid var(--table);
+	display: flex;
+	align-items: center;
+	margin: 0px 15px;
+	padding: 5px 0px;
+}
+.card_row:last-child{
+	padding-bottom: 15px;
+	border: 0;
+}
+.card_left{
+	width: 50%;
+}
+.card_right{
+	width: 50%;
+}
+.card_user{
+	color: #0B66C3;
+}
+.card_user_head{
+	margin-top: 20px;
+}
+.card_row_user{
+	border: 0;
+}
