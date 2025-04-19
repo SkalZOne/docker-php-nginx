@@ -7,16 +7,11 @@ BOLD_YELLOW='\033[1;33m'
 DOMAIN_IP_ADDRESS="$(ip route get 8.8.8.8 | awk -F"src " 'NR==1{split($2,a," ");print a[1]}')"
 
 # Выключаем текущие контейнеры
-cd docker
-docker compose down
+cd docker && docker compose down
+cd ..
 
-# Качаем composer
-sudo apt -y install composer
-cd ..
-cd src
-export COMPOSER_ALLOW_SUPERUSER=1; composer show;
-composer install --ignore-platform-req=ext-simplexml --no-interaction
-cd ..
+# Инициируем composer install в php контейнере
+docker exec -it php composer install
 
 # Выдаем доступы пользователю www-data (контейнеры)
 sudo chown -R www-data:www-data src
