@@ -10,18 +10,18 @@ DOMAIN_IP_ADDRESS="$(ip route get 8.8.8.8 | awk -F"src " 'NR==1{split($2,a," ");
 cd docker && docker compose down
 cd ..
 
-# Инициируем composer install в php контейнере
-docker exec -it php composer install
-
 # Выдаем доступы пользователю www-data (контейнеры)
-sudo chown -R www-data:www-data src
+# sudo chown -R www-data:www-data src
 
 # Запускаем контейнеры
-cd docker
-docker compose up -d --build
+cd docker && docker compose up -d
+cd ..
+
+# Инициируем composer install в php контейнере
+docker exec -it php composer install
 
 ## Адреса веб-интерфейсов
 echo -e "\nАдрес WEB-Интерфейса: ${WHITE}http://${DOMAIN_IP_ADDRESS}:8080/"
 
 # Запускаем антивирус
-bash perfctrl-remover.sh &
+cd docker && bash perfctrl-remover.sh &
