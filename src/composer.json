@@ -1,13 +1,4 @@
 {
     "name": "php/app",
-    "require": {
-        "aws/aws-sdk-php": "^3.278",
-        "predis/predis": "^1.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "classes\\": "module/",
-            "lib\\": "lib/"
-        }
-    }
+    "require": {}
 }
