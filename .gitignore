@@ -1,4 +1,3 @@
 docker/volumes/log
-src/vendor/*
-!src/vendor/autoload.php
 src/composer.lock
+src/vendor
