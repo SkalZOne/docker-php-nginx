@@ -1,3 +1,3 @@
-<?php
+<?
 
-var_dump('Запущено');
+var_dump($_REQUEST);

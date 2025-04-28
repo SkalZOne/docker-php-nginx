@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #00997b;
+    --primary-color-alt: #e0f6f1;
+    --secondary-color: #dd141c;
+    --focus-color: #2270ac;
+    --focus-color-alt: #154c79;
+    --bg-color: #fff;
+    --bs-secondary-bg-color: #fafafa;
+    --button-text-color: #fff;
+    --bs-secondary-text-color: #6c757d;
+    --theme-text-color: #000;
+    --default-border-radius: 10px;
+    --base-transition: all 0.4s ease 0s;
+}
+
+html, body {
+    background-image: url("/adm/assets/img/login/login-bg.jpg");
+    background-position: center;
+    font-family: 'Montserrat', sans-serif !important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: inset 0 -150px 750px rgba(0, 0, 0, 0.8)
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-header {
+    height: 50px;
+    background-color: #58606d;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .15));
+    -webkit-box-shadow: 0 1px 0 #848a94 inset, 0 1px 4px 1px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 1px 0 #848a94 inset, 0 2px 3px 0 rgba(0, 0, 0, 0.32);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    flex-shrink: 0;
+}
+
+.brand {
+    color: white;
+    display: inline-block;
+    margin-top: 2px;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 0.90rem !important;
+}
+.brand:hover {
+    color: white;
+}
+
+.brand img {
+    filter: none;
+    margin-top: -2px;
+}
+
+.container-fluid.d-flex {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 500px;
+    background-color: #f0f4f8;
+    border: 1px solid #6b7480;
+    border-width: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 40px!important;
+}
+p.text-left-upper {
+    font-size: 39px;
+    margin-top: -10px;
+}
+
+p.text-left-bottom {
+    margin-top: -25px;
+    margin-bottom: 10px;
+}
+
+form .btn {
+    background-color: #8fb52f;
+    color: white;
+}
+
+form .btn:hover {
+    background-color: #7aa52c;
+}
+
+a {
+    color: #1c53a4;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.mb-3 {
+    margin-bottom: 5px !important;
+    margin-top: 20x;
+}
+
+.mb-3.position-relative {
+    position: relative;
+}
+
+.login-btn {
+    width: 50px;
+    height: 45px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8fb52f;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    position: absolute;
+    right: 0px;
+    bottom: 1px;
+}
+.form-control {
+    box-shadow: inset 0 0px 3px rgb(185 178 178);
+    font-size: 22px;
+}
+
+
+.login-btn:hover {
+    background-color: #7aa52c;
+}
+
+.login-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+#password {
+    padding-right: 50px;
+}
+
+.custom-footer {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.form-check {
+    margin-top: 10px;
+}
+
+.mt-3 {
+    margin-top: 5px !important;
+    margin-bottom: -5px;
+}
+
+.footer-left,
+.footer-right {
+    color: #dee0e3;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-right a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #dee0e3;
+    margin-top: -1px;
+}
+
+.footer-right a img {
+    margin-right: 5px;
+}
+
+
+
+/* кастомные классы */
+
+.def-shadow {
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.25);
+}
+.button {
+    border-radius: var(--default-border-radius);
+    cursor: pointer;
+    color: var(--button-text-color);
+    background-color: var(--secondary-color);
+    height: 45px;
+    padding: 0 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.primary-bg {
+    background-color: var(--primary-color);
+}
+.secondary-bg {
+    background-color: var(--secondary-color);
+}
+.focus-color {
+    color: var(--focus-color);
+}
+.fs-mini {
+    font-size: 0.75rem;
+}
+.fs-micro {
+    font-size: 0.6rem;
+}
+.img-hover {
+    transition: var(--base-transition);
+}
+.img-hover:hover {
+    transition: var(--base-transition);
+    box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.6);
+    transform: scale(1.02);
+}
+.cursor-pointer {
+    cursor: pointer!important;
+}
+/* кастомные классы */

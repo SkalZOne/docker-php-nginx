@@ -1,0 +1,112 @@
+.adm-title {
+    color: #25282c;
+    margin: 10px 0 15px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 20px 0 20px;
+    text-shadow: 0 1px white;
+}
+
+.gadgetsholder {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.gadgets-container {
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 6px 20px 0 20px;
+}
+
+.gd-page-left, .gd-page-right {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.gd-page-bottom {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bx-gd-top, .bx-gd-bottom {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9f0f7;
+    border: 1px solid #c3ced9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.bx-gd-top:hover, .bx-gd-bottom:hover {
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(139, 152, 157, 0.28);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(139, 152, 157, 0.28);
+    box-shadow: 0px 0px 10px 5px rgba(139, 152, 157, 0.28);
+}
+
+.bx-gd-title {
+    color: #6A7C8A;
+    font-size: 21px;
+    line-height: 26px;
+    height: 45px;
+    border-bottom: solid 1px #c3ced9;
+    text-shadow: 0 1px 0 white;
+    overflow: hidden;
+    padding: 9px 0 0 15px;
+    text-overflow: ellipsis;
+}
+
+.bx-gd-button {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    gap: 10px;
+    align-items: center;
+}
+
+.bx-gd-top:hover .bx-gd-button, .bx-gd-bottom:hover .bx-gd-button {
+    display: flex;
+}
+
+.bx-gd-content {
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: none;
+    font-size: 13px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bx-gd-info {
+    font-size: 13px;
+    padding: 4px 0;
+}
+
+.bx-gd-info-left {
+    padding-right: 12px;
+    text-align: right;
+    width: 140px;
+    color: #9a9a9a;
+}
+
+.bx-gd-info-text {
+    font-size: 13px;
+}
+
+.logo {
+    float: right;
+    position: relative;
+    right: -265px;
+    top: -20px;
+}
+
+.editlink  {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
