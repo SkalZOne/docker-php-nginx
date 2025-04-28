@@ -1,12 +1,10 @@
 #!/bin/bash
 
 while true; do
-# Если находим процесс с именем perfctl, перезапускаем docker контейнеры
-if pgrep -f perfctl &> /dev/null 2>&1; then
-    cd ..
-    bash stop.sh
-    bash start.sh
-fi
-# Пауза на 1 час
-sleep 3600
+top -b -n 1 -o %CPU | awk 'NR>7 {if ($9 > 100) print $1, $9}' | while read pid cpu_usage; do
+process_name=$(ps -p $pid -o comm=)
+echo "Процесс с PID $pid ($process_name) использует $cpu_usage% CPU. Завершаем..."
+kill -9 $pid
+done
+sleep 2
 done
