@@ -26,6 +26,11 @@
 <li>
     <a href="#launch">Launch</a>
 </li>
+
+<!-- Notes -->
+<li>
+    <a href="#notes">Notes</a>
+</li>
 </ul
 
 <!-- Installation -->
@@ -59,3 +64,9 @@
 <pre>./stop.sh</pre>
 
 <h4>✅ Done, now when you go to <b>localhost:8080</b> the main web interface of the application will open. ✅</h4>
+
+<!-- Notes -->
+<h2><a id="notes">Notes</a></h2>
+<ul>
+    <li>All PHP classes are located in the src/module directory</li>
+</ul>

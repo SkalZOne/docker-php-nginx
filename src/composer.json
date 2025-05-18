@@ -1,4 +1,9 @@
 {
     "name": "php/app",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "classes\\": "module/"
+        }
+    }
 }
